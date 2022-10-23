@@ -1,0 +1,243 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include 'candy/partials/head.html' %}
+
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo me-auto"><a href="index.html"><span>Candy's<br></span>Kitchen</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="{% static 'candy/img/logo.png' %}" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a href="{% url 'homepage' %}" class="active">Home</a></li>
+
+          <li class="dropdown"><a href="{% url 'about_us' %}"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="{% url 'about_us' %}">About Us</a></li>
+              <li><a href="{% url 'teams' %}">Team</a></li>
+              <li><a href="{% url 'testimonials' %}">Testimonials</a></li>
+              <li class="dropdown"><a href="{% url 'homepage' %}"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="{% url 'about_us' %}">Deep Drop Down 1</a></li>
+                  <li><a href="{% url 'about_us' %}">Deep Drop Down 2</a></li>
+                  <li><a href="{% url 'about_us' %}">Deep Drop Down 3</a></li>
+                  <li><a href="{% url 'about_us' %}">Deep Drop Down 4</a></li>
+                  <li><a href="{% url 'about_us' %}">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li><a href="{% url 'service' %}">Services</a></li>
+          <li><a href="{% url 'portfolios' %}">Portfolio</a></li>
+          <li><a href="{% url 'price' %}">Pricing</a></li>
+          <li><a href="{% url 'blogs' %}">Blog</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="header-social-links d-flex">
+        <a href="#" class="twitter"><i class="bu bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bu bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bu bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bu bi-linkedin"></i></i></a>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Pricing</h2>
+          <ol>
+            <li><a href="{% url 'homepage' %}">Home</a></li>
+            <li>Pricing</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing">
+      <div class="container" data-aos="fade-up">
+
+
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="box">
+              <h3>Personal Meal</h3>
+              <h4><sup>N</sup>50,000<span> / month</span></h4>
+              <ul>
+                <li>Rice </li>
+                <li>Chicken Sauce</li>
+                <li>Meat balls</li>
+                <li>Cocktail Wine</li>
+                <li>cupcake</li>
+                <li>and more.....</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Order Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+            <div class="box featured">
+              <h3>Family Meal</h3>
+              <h4><sup>N</sup>200,000<span> / month</span></h4>
+              <ul>
+                <li>Rice </li>
+                <li>Chicken Sauce</li>
+                <li>Meat balls</li>
+                <li>Cocktail Wine</li>
+                <li>cupcake</li>
+                <li>and more.....</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Order Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
+            <div class="box">
+              <h3>Indoor Event Meals</h3>
+              <h4><sup>N</sup>400,000<span> / month</span></h4>
+              <ul>
+                <li>Fried and Jellof Rice </li>
+                <li>Chicken Sauce</li>
+                <li>Turkey</li>
+                <li>Chicken</li>
+                <li>Meat balls</li>
+                <li>Soda and softdrinks</li>
+                <li>Cocktail Wine</li>
+                <li>cupcake</li>
+                <li>and more.....</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Order Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
+            <div class="box">
+              <h3>Outdoor Event Meals</h3>
+              <h4><sup>N</sup>800,000<span> / month</span></h4>
+              <ul>
+                <li>Fried and Jellof Rice </li>
+                <li>Chicken Sauce</li>
+                <li>Turkey</li>
+                <li>Chicken</li>
+                <li>Grilled Meat</li>
+                <li>Barbecue</li>
+                <li>Meat balls</li>
+                <li>Soda and softdrinks</li>
+                <li>Cocktail Wine</li>
+                <li>Assorted Wine</li>
+                <li>cupcake</li>
+                <li>and more.....</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="#" class="btn-buy">Order Now</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Pricing Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li data-aos="fade-up">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">Question 1 <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
+                <p>
+                 What is the time for delivery?
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="100">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Question 2 <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                 Do your services covers inter-state?
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="200">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Question 3<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                  Can payment be made before the start of the month?
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="300">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Question 4 <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                 What are the flavours of cakes and ice-cream you sell? 
+                </p>
+              </div>
+            </li>
+
+            <li data-aos="fade-up" data-aos-delay="400">
+              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Question 5 <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
+                <p>
+                 Do sell each African Dishes?
+                </p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+
+  </main><!-- End #main -->
+
+  {% include 'candy/partials/footer.html' %}
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  {% include 'candy/partials/script.html' %}
+
+
+</body>
+
+</html>
